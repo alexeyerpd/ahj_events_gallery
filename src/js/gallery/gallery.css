@@ -1,0 +1,87 @@
+.gallery {
+    width: 100%;
+}
+
+.gallery-form {
+    display: grid;
+    gap: 15px;
+
+    width: 50%;
+    margin-inline: auto;
+    padding-inline: 20px;
+    padding-block: 40px;
+
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.gallery-control-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery-control-label {
+    text-align: right;
+    width: 45%;
+}
+
+.gallery-control-input {
+    width: 45%;
+}
+
+.gallery-control-error {
+    visibility: hidden;
+    width: 100%;
+    margin-block-start: 10px;
+
+    color: #f00;
+
+    text-align: center;
+}
+
+.gallery-control-error_visible {
+    visibility: visible;
+}
+
+.gallery-form-btn {
+    margin-block-start: 10px;
+    justify-self: center;
+}
+
+.gallery-list {
+    display: grid;
+    gap: 30px;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(4, 1fr);
+
+    margin-block-start: 40px;
+    padding: 30px;
+}
+
+.gallery-list-item {
+    position: relative;
+}
+
+.gallery-list-item-btn-remove {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+
+    width: 40px;
+    height: 40px;
+
+    background-color: #fff;
+
+    border: 1px solid #000;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.gallery-list-item-image {
+    width: 100%;
+    object-fit: cover;
+}
